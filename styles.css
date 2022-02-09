@@ -1,0 +1,85 @@
+@font-face {
+    font-family: odin-fonts;
+    src: url('Norse-Bold.otf');
+}
+
+body {
+    display: flex;
+    background-color: #808080;
+    margin: 0;
+    height: 100vh;
+}
+
+
+.body-left {
+    background-image: url('main-image.jpg');
+    background-size: cover;
+    width: 30%;
+    color: #ffffff;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+    font-size: 5.5rem;
+    font-family: odin-fonts;
+    position: relative;
+    top: 21%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.body-left div:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 81%;
+    font-size: 0.8rem;
+}
+
+.body-right {
+    background-color: #f2f2f2;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.body-right > div {
+    flex: 1;
+    padding: 21px;
+    padding-left: 36px;
+}
+
+.service-description-container {
+    height: 100%;
+    font-size: 1.3rem;
+    font-family:'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.service-description-container p:first-child {
+    margin: 0;
+    max-width: 600px;
+}
+
+.service-description-container p:nth-child(2) {
+    margin: 0;
+}
+
+.body-right > div:nth-child(2) {
+    background-color: #ffffff;
+}
+
+.inputs {
+    box-shadow: #e6e6e6 6px 6px 12px;
+}
+
+.inputs p {
+    margin-top: 0;
+    font-size: 1.2rem;
+    font-family:'Roboto', sans-serif;
+}
