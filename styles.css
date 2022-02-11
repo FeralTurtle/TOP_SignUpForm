@@ -10,7 +10,6 @@ body {
     height: 100vh;
 }
 
-
 .body-left {
     background-image: url('main-image.jpg');
     background-size: cover;
@@ -70,16 +69,67 @@ body {
     margin: 0;
 }
 
-.body-right > div:nth-child(2) {
-    background-color: #ffffff;
-}
-
 .inputs {
     box-shadow: #e6e6e6 6px 6px 12px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
 }
 
 .inputs p {
     margin-top: 0;
+    margin-bottom: 0;
     font-size: 1.2rem;
     font-family:'Roboto', sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: 11px;
+    white-space: pre-line;
+}
+
+.form-right {
+    position: relative;
+    left: 45px;
+}
+
+.confirm-btns span {
+    color: #596D48;
+}
+
+button {
+    padding: 12px 32px;
+    margin-bottom: 17px;
+    margin-top: 11px;
+    border: none;
+    border-radius: 12px;
+    color: #ffffff;
+    background-color: #596D48;
+    font-size: 1.3rem;
+    font-family: 'Roboto';
+}
+
+button:active {
+    transform: translate(0.5px, 1px);
+}
+
+a {
+    color: #ffffff;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+fieldset {
+    display: flex;
+    padding: 0;
+    margin-bottom: 22px;
+    border: none;
+}
+
+fieldset div:nth-child(2) {
+    position: relative;
+    left: 45px;
 }
